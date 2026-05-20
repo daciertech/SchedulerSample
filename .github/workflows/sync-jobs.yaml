@@ -32,9 +32,9 @@ jobs:
 
     steps:
     - name: Login to Azure
-      uses: azure/login@v2
+      uses: azure/login@v3
       with:
-        client-id: 68ffd246-220c-4383-996a-bb1e01ccfdcc
+        client-id: f212c29b-f492-4e21-acf5-e6769002a4df
         tenant-id: cb52a8e1-1116-4162-8254-e8398c5381e1
         subscription-id: f9d56a33-beed-4298-8d04-b0d9392cd2b3
 
@@ -44,10 +44,4 @@ jobs:
         organization: Dev
         token: ${{ secrets.GITHUB_TOKEN }}
         tenant: Dacier
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        ACTIONS_ID_TOKEN_REQUEST_URL: ${{ env.ACTIONS_ID_TOKEN_REQUEST_URL }}
-        ACTIONS_ID_TOKEN_REQUEST_TOKEN: ${{ env.ACTIONS_ID_TOKEN_REQUEST_TOKEN }}
-        CLIENT_ID: 68ffd246-220c-4383-996a-bb1e01ccfdcc
-        TENANT_ID: cb52a8e1-1116-4162-8254-e8398c5381e1
 
