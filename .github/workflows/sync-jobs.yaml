@@ -30,13 +30,16 @@ jobs:
         shell: bash
 
     steps:
-    - name: Login to Azure
+    - name: Login to Azure using Federated Identity
       uses: azure/login@v3
       with:
         auth-type: IDENTITY
         client-id: f212c29b-f492-4e21-acf5-e6769002a4df
         tenant-id: cb52a8e1-1116-4162-8254-e8398c5381e1
         subscription-id: f9d56a33-beed-4298-8d04-b0d9392cd2b3
+
+    - name: Show logged-in identity
+      run: az account show
 
     - name: Sync Jobs
       uses: daciertech/scheduler-sync@main
