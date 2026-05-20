@@ -1,0 +1,7 @@
+apiVersion: 1.0
+kind: runner
+metadata:
+  name: Blue
+  description: Blue Runner
+  tags: [blue, linux]
+spec:

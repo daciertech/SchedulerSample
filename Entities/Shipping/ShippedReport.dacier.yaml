@@ -1,0 +1,17 @@
+apiVersion: 1.0
+kind: cli
+metadata:
+  name: ShippedReport
+  description: Generate Shipped Report
+spec:
+  shell: sh
+  script: |
+    echo "Emailing Shipping Report..."
+    sleep 10
+    echo "Shipping report emailed."
+  actions:
+  -
+    action: cronSchedule
+    cronExpression: "0 8 * * *"
+
+

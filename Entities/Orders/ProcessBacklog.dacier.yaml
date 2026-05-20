@@ -1,0 +1,19 @@
+apiVersion: 1.0
+kind: cli
+metadata:
+  name: ProcessBacklog
+  description: Process Backlog Orders
+spec:
+  inheritFrom:
+    referenceName: OrdersBase
+  shell: sh
+  script: |
+    echo "Checking infrastructure..."
+    sleep 10
+    echo "Hourly check completed."
+  actions:
+  -
+    action: cronSchedule
+    cronExpression: "@hourly"
+
+

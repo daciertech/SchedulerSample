@@ -1,0 +1,17 @@
+apiVersion: 1.0
+kind: cli
+metadata:
+  name: CheckInfrastructure
+  description: Check Infrastructure
+spec:
+  shell: sh
+  script: |
+    echo "Checking infrastructure..."
+    sleep 10
+    echo "Infrastructure check completed."
+  actions:
+  -
+    action: cronSchedule
+    cronExpression: "*/30 * * * *"
+
+
