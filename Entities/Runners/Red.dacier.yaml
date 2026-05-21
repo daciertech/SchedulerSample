@@ -1,0 +1,7 @@
+apiVersion: 1.0
+kind: runner
+metadata:
+  name: Red
+  description: Red Runner
+  tags: [red, linux]
+spec:
