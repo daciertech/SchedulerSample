@@ -1,5 +1,5 @@
-apiVersion: 1.0
-kind: Job
+apiVersion: v1.0
+kind: job
 metadata:
   name: OrdersBase
   description: Base Job for Orders

@@ -1,0 +1,17 @@
+apiVersion: v1.0
+kind: cli
+metadata:
+  name: LogCleaner
+  description: Clean Logs
+spec:
+  shell: sh
+  script: |
+    echo "Cleaning logs..."
+    sleep 18
+    echo "Log cleaning completed."
+  actions:
+  -
+    action: cronSchedule
+    cronExpression: "*/5 * * * *"
+
+

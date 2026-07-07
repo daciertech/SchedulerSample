@@ -1,4 +1,4 @@
-apiVersion: 1.0
+apiVersion: v1.0
 kind: organizationalUnit
 metadata:
   name: Dev
@@ -20,6 +20,7 @@ spec:
     hidden: true
 
   actions:
+  - action: 
   - action: completedJob
     name: CompletedJob
     matchTags: [Default]

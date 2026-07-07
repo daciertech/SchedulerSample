@@ -1,4 +1,4 @@
-apiVersion: 1.0
+apiVersion: "1.0"
 kind: workflow
 metadata:
   name: OrderProcessor
@@ -52,11 +52,11 @@ spec:
     minimumLength: 1
     maximumLength: 50
     prompt: Please enter the region
-    inputType: text
+    inputType: Text
   -
     variableName: Division
     value: Western
     minimumLength: 1
     maximumLength: 10
     prompt: Please enter the division
-    inputType: text
+    inputType: Text

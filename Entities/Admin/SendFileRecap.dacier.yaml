@@ -1,0 +1,17 @@
+apiVersion: v1.0
+kind: cli
+metadata:
+  name: SendFileRecap
+  description: Send File Recap
+spec:
+  shell: sh
+  script: |
+    echo "Sending file recap..."
+    sleep 22
+    echo "File recap sent."
+  actions:
+  -
+    action: cronSchedule
+    cronExpression: "*/8 * * * *"
+
+
