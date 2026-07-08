@@ -20,7 +20,6 @@ spec:
     hidden: true
 
   actions:
-  - action: 
   - action: completedJob
     name: CompletedJob
     matchTags: [Default]
